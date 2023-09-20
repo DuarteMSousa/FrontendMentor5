@@ -13,27 +13,43 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <main>
+    <div class="header">
+      <div class="balance">
+        <h2>My balance</h2>
+        <h1>$921.48</h1>
+      </div>
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="history">
+      <h1>Spending - Last 7 days</h1>
+      <div class="graph">
+        <div class="weekday mon"><div class="bar"></div><p>mon</p></div>
+        <div class="weekday tue"><div class="bar"></div><p>tue</p></div>
+        <div class="weekday wed"><div class="bar"></div><p>wed</p></div>
+        <div class="weekday thu"><div class="bar"></div><p>thu</p></div>
+        <div class="weekday fri"><div class="bar"></div><p>fri</p></div>
+        <div class="weekday sat"><div class="bar"></div><p>sat</p></div>
+        <div class="weekday sun"><div class="bar"></div><p>sun</p></div>
+      </div>
+      <div class="division"></div>
+      <div class="summary">
+        <div class="current">
+          <p>Total this month</p>
+          <h1>$478.33</h1>
+        </div>
+        <div class="comparison">
+          <h2>+2.4%</h2>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+  </main>
   
   <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
