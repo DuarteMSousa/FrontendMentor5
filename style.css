@@ -107,10 +107,15 @@ main {
     border-radius: 3px;
     width: 30px;
     height: 10px;
+    transition-duration: 0.1s;
+    tra
+    
 }
 
 .bar:hover{
     background-color: var(--cream);
+    transition-duration: 5s;
+    
 }
 
 .current p{
@@ -118,11 +123,11 @@ main {
    font-size: small;
 }
 
-.wednesday .bar{
+.max {
     background-color: var(--cyan);
 }
 
-.wednesday .bar:hover{
+.max :hover{
     background-color:  hsl(186, 50%, 71%);
 }
 
