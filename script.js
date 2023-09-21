@@ -25,8 +25,10 @@ fetch('data.json').then(res => res.json()).then(data => {
 
     for (i = 0; i < data.length; i++) {
         if (data[i].amount == max) {
+            document.querySelector('.' + data[i].day).querySelector('.bar').title=data[i].amount
             document.querySelector('.' + data[i].day).querySelector('.bar').style.height = "100px"
             document.querySelector('.' + data[i].day).querySelector('.bar').classList.add("max")
+            
         }
     }
 
@@ -34,6 +36,7 @@ fetch('data.json').then(res => res.json()).then(data => {
     for (i = 0; i < data.length; i++) {
         height=(data[i].amount/max)*100
         document.querySelector('.' + data[i].day).querySelector('.bar').style.height = height+"px"
+        document.querySelector('.' + data[i].day).querySelector('.bar').title=data[i].amount
     }
 })
 

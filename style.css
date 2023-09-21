@@ -106,16 +106,13 @@ main {
     background-color: var(--softRed);
     border-radius: 3px;
     width: 30px;
-    height: 10px;
-    transition-duration: 0.1s;
-    tra
-    
+    height: 10px; 
+    transition: height 1s ease-out, background-color 0.3s ease-in;
 }
 
 .bar:hover{
     background-color: var(--cream);
-    transition-duration: 5s;
-    
+    transition: background-color 0.3s ease-in-out;
 }
 
 .current p{
@@ -127,7 +124,7 @@ main {
     background-color: var(--cyan);
 }
 
-.max :hover{
+.max:hover{
     background-color:  hsl(186, 50%, 71%);
 }
 
