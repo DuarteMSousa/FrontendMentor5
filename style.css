@@ -178,7 +178,6 @@ main {
         width: min-content;
     }
     .bar{
-        width: 20px;
-
+        width: 30px;
     }
 }
