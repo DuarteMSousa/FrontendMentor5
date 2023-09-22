@@ -156,7 +156,6 @@ main {
     font-size: small;
 }
 
-
 .hidden {
     background-color: var(--darkBrown);
     color: white;
@@ -165,11 +164,21 @@ main {
     font-size: small;
     font-weight: 700;
     padding: 0.6em;
-    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 3px 3px 30px rgba(94, 75, 75, 0.226);
     margin-bottom: 0.5em;
     visibility: hidden;
-    
+    position: absolute;
+    top:43vh;
 } 
+
+@media (max-width:375px){
+    main{
+        width: min-content;
+    }
+    .bar{
+        width: 20px;
+
+    }
+}
